@@ -336,6 +336,13 @@ background-color: #fff;
     color: #fff;
     background-color: #b5121b;
 }
+@media(max-width:767px) {
+    .btn-default-small-screen {
+    border: 1px solid #b5121b;
+    color: #b5121b;
+    background-color: #fff; 
+    }
+    }
 
 .btn-huge {
     padding: 25px;
