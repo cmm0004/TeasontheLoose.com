@@ -1,0 +1,22 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+RewriteCond %{HTTP_HOST} ^teasontheloose\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.teasontheloose\.com$
+RewriteRule ^bcr\.html$ "http\:\/\/www\.teasontheloose\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^teasontheloose\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.teasontheloose\.com$
+RewriteRule ^pr\.html$ "http\:\/\/www\.teasontheloose\.com\/blog\/gift\-tea\/" [R=301,L]
+ErrorDocument 404 http://www.teasontheloose.com/404.html
+
