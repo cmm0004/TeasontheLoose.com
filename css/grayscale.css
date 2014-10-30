@@ -227,6 +227,10 @@ h1.brand-heading {
     -moz-animation-timing-function: linear;
 }
 
+#paypal-banner {
+float: left;
+}
+
 @-webkit-keyframes pulse {    
     0 {
         -webkit-transform: scale(1);
@@ -457,3 +461,60 @@ color: black;
 .modal-title {
 color: black;
 }
+
+/* .slideThree */
+.slideThree {
+  width: 150px;
+  height: 26px;
+  background: #333;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.slideThree:after {
+  content: 'For Me';
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  z-index: 0;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+.slideThree:before {
+  content: 'Buy as Gift';
+  color: #b5121b;
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+.slideThree label {
+  display: block;
+  width: 70px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+  background: #fcfff4;
+  background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 50px;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.slideThree input[type=checkbox] {
+  visibility: hidden;
+}
+.slideThree input[type=checkbox]:checked + label {
+  left: 77px;
+}
+
+/* end .slideThree */
+
