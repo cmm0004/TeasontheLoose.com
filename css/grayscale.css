@@ -422,6 +422,8 @@ color: #fff;
 img.profile {
 border: 4px double white;
 margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .packaging {
