@@ -315,6 +315,15 @@ color: #b5121b;
     border-top: 30px solid black;
 }
 
+#footer {
+	width: 100%;
+	background-color: #333333;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 
 
 #map {
@@ -434,10 +443,27 @@ padding: 0px;
 
 .footer-nav{
 font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+display: block;
+list-style-type: none;
+font-weight: light;
+
+}
+
+.footer-nav > li{
+padding-top: 20px;
 }
  
 .footer-nav > li > a{
-color: #fff;
+color: #747272;
+}
+
+.footer-row {
+margin: 15px;
+}
+
+img#footer-logo {
+float: right;
+padding-top: 20px;
 }
 
 
